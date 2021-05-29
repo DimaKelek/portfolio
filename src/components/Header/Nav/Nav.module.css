@@ -1,0 +1,12 @@
+.nav {
+    border: 1px solid;
+    width: 600px;
+    display: flex;
+    justify-content: space-around;
+}
+.nav a {
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Bradley Hand, cursive;
+    color: #fff;
+}
