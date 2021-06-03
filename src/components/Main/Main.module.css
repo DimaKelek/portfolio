@@ -5,7 +5,7 @@
     justify-content: center;
 }
 
-.container {
+.main_container {
     height: 100vh;
     width: 70%;
     border: 1px solid;
@@ -13,6 +13,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.photo {
+    width: 500px;
+    height: 570px;
+    background-color: #b85e42;
 }
 
 .discription {
@@ -34,8 +40,11 @@
     background-color: #c63f59;
 }
 
-.photo {
-    width: 500px;
-    height: 570px;
-    background-color: #b85e42;
+.title {
+    width: 16px;
+    height: 16px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }

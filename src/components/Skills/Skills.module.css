@@ -1,0 +1,27 @@
+.skills {
+    height: 110vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+.title {
+    position: relative;
+    text-align: center;
+    max-width: 600px;
+    padding-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 55px;
+    font-size: 30px;
+    color: #fff;
+}
+
+.skills_container {
+    /*border: 1px solid;*/
+    height: 100vh;
+    width: 70%;
+}
+.skills_items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}

@@ -1,0 +1,56 @@
+.item {
+    position: relative;
+    padding-right: 15px;
+    padding-left: 15px;
+    font-family: Poppins, serif;
+}
+.item:hover .skill h3 {
+    color: #0d82c6;
+    transition: .5s;
+}
+.item:hover .icon {
+    border: 3px solid #0d82c6;
+    transition: .5s;
+}
+.skill {
+    background-color: #0c0c0c;
+    color: #fff;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    margin-top: 40px;
+    padding: 65px 15px 25px;
+}
+.icon {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 0;
+    width: 80px;
+    height: 80px;
+    color: #ffffff;
+    border: 3px solid #111111;
+    border-radius: 100%;
+    background-color: #000000;
+    transition-duration: .5s;
+}
+
+.icon img{
+    height: 40px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.skill h3 {
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 17px;
+    transition-duration: .5s;
+}
+
+.skill p {
+    text-align: center;
+}
