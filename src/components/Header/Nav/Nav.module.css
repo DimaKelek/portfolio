@@ -1,12 +1,32 @@
 .nav {
     border: 1px solid;
-    width: 600px;
+    width: 370px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .nav a {
     text-decoration: none;
-    font-size: 20px;
-    font-family: Bradley Hand, cursive;
+    font-size: 16px;
+    font-family: Poppins, serif;
     color: #fff;
+}
+.button {
+    position: relative;
+    overflow: hidden;
+}
+
+.line {
+    position: absolute;
+    display: block;
+
+    height: 3px;
+    background: #0d82c6;
+    bottom: 0;
+    left: -100%;
+    width: 100%;
+    transition-duration: 1s;
+}
+.nav a:hover .line {
+    left: 0;
+    transition: .8s;
 }

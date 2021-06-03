@@ -1,5 +1,5 @@
 .skills {
-    height: 110vh;
+    height: 120vh;
     background-color: black;
     display: flex;
     justify-content: center;
@@ -12,16 +12,34 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 55px;
-    font-size: 30px;
+    font-family: Poppins, serif;
+    text-transform: uppercase;
     color: #fff;
+}
+.title h2 {
+    font-size: 40px;
+}
+
+.title span {
+    color: #0d82c6;
 }
 
 .skills_container {
-    /*border: 1px solid;*/
     height: 100vh;
     width: 70%;
 }
 .skills_items {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+}
+
+.bar {
+    width: 100px;
+    height: 3px;
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #0d82c6;
 }

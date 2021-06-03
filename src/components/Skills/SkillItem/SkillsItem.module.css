@@ -3,15 +3,9 @@
     padding-right: 15px;
     padding-left: 15px;
     font-family: Poppins, serif;
+    transition-duration: .5s;
 }
-.item:hover .skill h3 {
-    color: #0d82c6;
-    transition: .5s;
-}
-.item:hover .icon {
-    border: 3px solid #0d82c6;
-    transition: .5s;
-}
+
 .skill {
     background-color: #0c0c0c;
     color: #fff;
@@ -19,6 +13,7 @@
     margin-bottom: 30px;
     margin-top: 40px;
     padding: 65px 15px 25px;
+    min-height: 190px;
 }
 .icon {
     position: absolute;
@@ -35,7 +30,7 @@
     transition-duration: .5s;
 }
 
-.icon img{
+.icon img {
     height: 40px;
     position: relative;
     top: 50%;
@@ -47,10 +42,37 @@
     display: block;
     text-align: center;
     margin-bottom: 20px;
-    font-size: 17px;
+    font-size: 18px;
     transition-duration: .5s;
 }
 
 .skill p {
     text-align: center;
 }
+
+.triangle {
+    position: absolute;
+    right: 25px;
+    bottom: 35px;
+}
+.triangle img {
+    width: 45px;
+}
+
+.item:hover .skill h3 {
+    color: #0d82c6;
+    transition: .5s;
+}
+.item:hover .icon {
+    border: 3px solid #0d82c6;
+    transition: .5s;
+}
+.item:hover .icon {
+    transform: rotate(360deg);
+    transition: 1s;
+}
+.item:hover {
+    transition: .5s;
+    transform: translateY(-20px);
+}
+

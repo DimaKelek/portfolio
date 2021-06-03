@@ -37,6 +37,7 @@ export function Main() {
 
                 </div>
             </div>
+            <div className={S.space}/>
         </div>
     );
 }
