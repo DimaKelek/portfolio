@@ -1,5 +1,6 @@
 import React from "react";
 import S from "./SkillsItem.module.css";
+import triangle from "../../../common/others/triangle.png"
 
 type SkillItemPT = {
     title: string
@@ -17,7 +18,7 @@ export function SkillsItem(props: SkillItemPT) {
                 <h3>{props.title}</h3>
                 <p>{props.text}</p>
                 <div className={S.triangle}>
-                    <img src="https://themes.envytheme.com/milian/wp-content/themes/milian/assets/img/shape2.png" alt="image"/>
+                    <img src={triangle} alt="image"/>
                 </div>
             </div>
         </div>

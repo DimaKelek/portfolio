@@ -17,13 +17,12 @@
 }
 .icon {
     position: absolute;
+    top: 0;
     left: 0;
     right: 0;
     margin: 0 auto;
-    top: 0;
     width: 80px;
     height: 80px;
-    color: #ffffff;
     border: 3px solid #111111;
     border-radius: 100%;
     background-color: #000000;
@@ -48,6 +47,7 @@
 
 .skill p {
     text-align: center;
+    color: #c1bfbf;
 }
 
 .triangle {

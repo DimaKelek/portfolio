@@ -1,24 +1,8 @@
 .header {
-    height: 90px;
     background-color: black;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
-    position: relative;
-}
-
-.logo img {
-    position: absolute;
-    top: 0;
-    left: 15%;
     height: 90px;
 }
-.name {
-    font-family: 'Permanent Marker', cursive;
-    font-size: 30px;
-    position: absolute;
-    color: #0d82c6;
-    top: 40%;
-    left: 23%;
-}
+
