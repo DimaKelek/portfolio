@@ -1,37 +1,17 @@
 import React from "react";
 import S from "./Main.module.css"
+import {SocialNetworks} from "../SocialNetworks/SocialNetworks";
 
 export function Main() {
     return (
         <div className={S.main}>
             <div className={S.main_container}>
                 <div className={S.discription}>
-                    <span>Hello, I'm</span>
+                    <span className={S.hello}>Hello, I'm</span>
                     <h1>Dmitry Shelestov</h1>
-                    <span>Front-end developer</span>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, nesciunt.</p>
-                    <div className={S.icons}>
-                        <a href="https://vk.com/id268131358" target="_blank">
-                            <div className={S.icon}>
-                                <div className={S.title}>ВК</div>
-                            </div>
-                        </a>
-                        <a href="https://www.instagram.com/___kelek___/" target="_blank">
-                            <div className={S.icon}>
-                                <div className={S.title}>In</div>
-                            </div>
-                        </a>
-                        <a href="https://t.me/KelekOfficial" target="_blank">
-                            <div className={S.icon}>
-                                <div className={S.title}>Tg</div>
-                            </div>
-                        </a>
-                        <a href="https://google.com" target="_blank">
-                            <div className={S.icon}>
-                                <div className={S.title}>Ln</div>
-                            </div>
-                        </a>
-                    </div>
+                    <span className={S.job}>Front-end developer</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est excepturi molestiae veniam! Ab aperiam culpa cum deleniti ducimus, earum est excepturi impedit minima natus necessitatibus obcaecati, placeat quam, quisquam voluptatem!</p>
+                    <SocialNetworks/>
                 </div>
                 <div className={S.photo}>
 
