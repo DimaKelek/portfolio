@@ -1,4 +1,4 @@
-.link a {
+.link {
     text-decoration: none;
     color: white;
     font-size: 20px;
@@ -6,14 +6,12 @@
     transition-duration: .5s;
 }
 
-.link:hover a {
+.link:hover {
     color: #0d82c6;
     transition: .5s;
 }
 
-
-
-.menu_container:hover {
+.menu:hover {
     color: white;
     background-color: #0d82c6;
     transition: .3s;

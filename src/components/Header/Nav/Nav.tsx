@@ -3,20 +3,30 @@ import S from "./Nav.module.css"
 import Sc from "../Containers.module.css"
 import {nav} from "../../data";
 
-export function Nav() {
+type NavPropsType = {
+    collapsed: boolean
+    setCollapsed: (collapsed: boolean) => void
+}
+
+export function Nav(props: NavPropsType) {
+
     const navItems = nav.map((item, i) => {
         return (
-            <div key={i} className={S.link}>
-                <a href={item.href}>{item.title}</a>
-            </div>
+            <a key={i} className={S.link} href={item.href}>{item.title}</a>
         )
     })
+    const collapsedMenu = () => {
+        props.setCollapsed(!props.collapsed)
+    }
     return (
-        <div className={Sc.nav_container}>
+        <div className={`${Sc.nav_container} `}>
             <div className={Sc.navItems_container}>
                 {navItems}
             </div>
-            <div className={Sc.menu_container}>
+            <div
+                className={`${Sc.menu_container} ${S.menu}`}
+                onClick={collapsedMenu}
+            >
                 <div>&#9776;</div>
             </div>
         </div>
