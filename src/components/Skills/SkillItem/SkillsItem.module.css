@@ -1,23 +1,26 @@
 .item {
-    position: relative;
-    padding-right: 15px;
-    padding-left: 15px;
+    display: flex;
+    justify-content: center;
     font-family: Poppins, serif;
     transition-duration: .5s;
+    min-height: 350px;
+    width: 330px;
 }
 
 .skill {
+    position: relative;
     background-color: #0c0c0c;
     color: #fff;
     border-radius: 5px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     margin-top: 40px;
     padding: 65px 15px 25px;
-    min-height: 190px;
+    width: 295px;
+    min-height: 200px;
 }
 .icon {
     position: absolute;
-    top: 0;
+    top: -40px;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -30,7 +33,7 @@
 }
 
 .icon img {
-    height: 40px;
+    height: 50%;
     position: relative;
     top: 50%;
     left: 50%;
@@ -48,13 +51,16 @@
 .skill p {
     text-align: center;
     color: #c1bfbf;
+    font-size: 15px;
+    margin-bottom: 20px;
 }
 
 .triangle {
     position: absolute;
-    right: 25px;
-    bottom: 35px;
+    right: 10px;
+    bottom: 10px;
 }
+
 .triangle img {
     width: 45px;
 }
@@ -74,5 +80,32 @@
 .item:hover {
     transition: .5s;
     transform: translateY(-20px);
+}
+
+@media screen and (max-width: 321px) {
+    .skill {
+        width: 280px;
+    }
+
+    .item {
+        width: 280px;
+    }
+}
+@media screen and (max-width: 281px) {
+    .skill {
+        width: 250px;
+    }
+
+    .item {
+        width: 250px;
+    }
+
+    .icon {
+        width: 70px;
+        height: 70px;
+    }
+    .skill p {
+        margin-bottom: 30px;
+    }
 }
 

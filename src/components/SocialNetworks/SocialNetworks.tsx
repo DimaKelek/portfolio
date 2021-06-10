@@ -34,7 +34,6 @@ export function SocialNetworks() {
                     <div className={S.icon}><img src={linkedIn} alt="linkedIn"/></div>
                 </div>
             </a>
-
         </div>
     );
 }

@@ -1,29 +1,13 @@
 .main {
-    height: 110vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: black;
 }
 
-.main_container {
-    height: 100vh;
-    width: 70%;
-    border: 1px solid;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 .photo {
-    width: 500px;
-    height: 570px;
-    background-color: #b85e42;
-}
-
-.discription {
-    width: 500px;
-    font-family: Poppins, serif;
+    height: 100%;
 }
 
 .discription h1 {
@@ -34,7 +18,7 @@
 .discription p {
     color: #afafaf;
     font-size: 14px;
-    margin-bottom: 25px;
+    margin: 25px 0;
 }
 .hello {
     font-size: 18px;

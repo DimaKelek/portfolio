@@ -18,7 +18,7 @@ export function SkillsItem(props: SkillItemPT) {
                 <h3>{props.title}</h3>
                 <p>{props.text}</p>
                 <div className={S.triangle}>
-                    <img src={triangle} alt="image"/>
+                    <div><img src={triangle} alt="image"/></div>
                 </div>
             </div>
         </div>
