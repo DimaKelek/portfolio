@@ -5,6 +5,10 @@ import iconHTML from "../common/icons/html5.svg"
 import iconCSS from "../common/icons/css3.svg"
 import iconJest from "../common/icons/jest.png"
 
+import iconLocation from "../common/icons/location.png"
+import iconEmail from "../common/icons/message.png"
+import iconPhone from "../common/icons/phone.png"
+
 export type SkillsType = {
     title: string
     icon: string
@@ -43,4 +47,16 @@ export const nav: Array<NavType> = [
     {title: "ABOUT ME", href: "", status: false},
     {title: "PROJECTS", href: "", status: false},
     {title: "CONTACTS", href: "", status: false},
+]
+
+export type ContactType = {
+    title: string
+    icon: string
+    contactData: string
+}
+
+export const contacts: Array<ContactType> = [
+    {title: "Address", icon: iconLocation, contactData: "Zalupa City Otsosite"},
+    {title: "Email", icon: iconEmail, contactData: "Zalupa@gmail.com"},
+    {title: "Phone", icon: iconPhone, contactData: "+2334 328 "},
 ]

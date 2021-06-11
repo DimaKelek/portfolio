@@ -19,7 +19,6 @@ export function Main() {
                     <img className={S.photo} src={photo} alt="photo"/>
                 </div>
             </div>
-            <div className={S.space}/>
         </div>
     );
 }
