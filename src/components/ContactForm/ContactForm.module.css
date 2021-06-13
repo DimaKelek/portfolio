@@ -1,0 +1,215 @@
+.title {
+    margin-bottom: 60px;
+    font-family: Poppins, serif;
+}
+
+.title h2 {
+    font-size: 40px;
+    padding-bottom: 20px;
+    border-bottom: 3px solid #0d82c6;
+    color: white;
+}
+
+.title span {
+    color: #0d82c6;
+    text-transform: uppercase;
+}
+
+
+.form_group {
+    padding: 10px;
+}
+
+.form_group input {
+    height: 28px;
+    padding: 10px 15px;
+    color: #ffffff;
+    background-color: #0c0c0c;
+    border: 1px solid #0c0c0c;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 100%;
+}
+.form_group input:focus {
+    border: 1px solid #0c0c0c;
+    transition: 2s;
+}
+
+textarea {
+    background-color: #0c0c0c;
+    font-family: Poppins, serif;
+    padding: 10px 15px;
+    cursor: text;
+    color: #ffffff;
+    overflow: auto;
+    min-height: 270px;
+    resize: vertical;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-align: start;
+    transition: .5s;
+    overflow-wrap: break-word;
+    width: 100%;
+}
+
+.chakres {
+    width: 100%;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.icon img {
+    width: 100%;
+}
+
+.ts {
+    top: 180px;
+    left: 265px;
+    animation-name: heart;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.redux {
+    top: 20px;
+    left: 230px;
+    animation-name: rotation;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.react {
+    position: absolute;
+    width: 70px;
+    top: 110px;
+    left: 215px;
+    animation-name: rotation;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.html5 {
+    left: 230px;
+    top: 280px;
+    animation-name: orbit;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.css3 {
+    left: 230px;
+    top: 280px;
+    animation-name: orbit;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.jest {
+    top: 180px;
+    left: 200px;
+    animation-name: heart;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes rotation {
+    from{transform: rotate(0)}
+    to{transform: rotate(360deg)}
+}
+
+@keyframes orbit {
+    from { transform: rotate(0deg) translateX(30px) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(30px) rotate(-360deg); }
+}
+@keyframes heart {
+    0%, 100% {transform: scale(1);}
+    25% { transform: scale(1.1);}
+    50% {transform: scale(1);}
+    75% {transform: scale(1.2);}
+}
+@keyframes breath {
+    0% {transform: scale(0.5);}
+    25% {transform: scale(1.9);}
+    50% {transform: scale(1.5);}
+    60% {transform: scale(1.3);}
+    75% {transform: scale(1.1);}
+    100% {transform: scale(0.5);}
+}
+
+@media screen and (max-width: 1080px) {
+    .ts {
+        top: 120px;
+        left: 245px;
+    }
+
+    .redux {
+        top: 10px;
+        left: 205px;
+    }
+
+    .react {
+        top: 90px;
+        left: 190px;
+    }
+
+    .html5 {
+        left: 210px;
+        top: 260px;
+    }
+
+    .css3 {
+        left: 210px;
+        top: 260px;
+    }
+
+    .jest {
+        top: 160px;
+        left: 180px;
+    }
+}
+@media screen and (max-width: 630px) {
+    .ts {
+        top: 140px;
+        left: 205px;
+    }
+
+    .redux {
+        top: 5px;
+        left: 182px;
+    }
+
+    .react {
+        top: 70px;
+        left: 165px;
+    }
+
+    .html5 {
+        left: 180px;
+        top: 240px;
+    }
+
+    .css3 {
+        left: 180px;
+        top: 240px;
+    }
+
+    .jest {
+        top: 140px;
+        left: 160px;
+    }
+}
