@@ -12,7 +12,7 @@ import iconJest from "../../common/icons/jest.png"
 
 export function ContactForm() {
     return (
-        <div className={Sc.contactForm}>
+        <div id="CONTACTS" className={Sc.contactForm}>
             <div className={`${Sc.container} ${S.title}`}>
                 <span>let's talk</span>
                 <h2>Get in Touch</h2>

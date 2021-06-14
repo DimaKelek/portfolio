@@ -9,6 +9,9 @@ import iconLocation from "../common/icons/location.png"
 import iconEmail from "../common/icons/message.png"
 import iconPhone from "../common/icons/phone.png"
 
+import network from "../common/others/network.jpg"
+import todolist from "../common/others/todolist.jpg"
+
 export type SkillsType = {
     title: string
     icon: string
@@ -43,10 +46,35 @@ export type NavType = {
 }
 
 export const nav: Array<NavType> = [
-    {title: "HOME", href: "", status: true},
-    {title: "ABOUT ME", href: "", status: false},
-    {title: "PROJECTS", href: "", status: false},
-    {title: "CONTACTS", href: "", status: false},
+    {title: "HOME", href: "#HOME", status: true},
+    {title: "ABOUT ME", href: "#ABOUT", status: false},
+    {title: "PROJECTS", href: "#PROJECTS", status: false},
+    {title: "CONTACTS", href: "#CONTACTS", status: false},
+]
+
+export type ProjectType = {
+    date: string
+    title: string
+    discription: string
+    link: string
+    photo: string
+}
+
+export const projects: Array<ProjectType> = [
+    {
+        date: "May 15, 2021",
+        title: "Social Network",
+        discription: "",
+        link: "https://github.com/DimaKelek/network",
+        photo: network
+    },
+    {
+        date: "May 15, 2021",
+        title: "To do list",
+        discription: "",
+        link: "https://github.com/DimaKelek/todolist",
+        photo: todolist
+    }
 ]
 
 export type ContactType = {

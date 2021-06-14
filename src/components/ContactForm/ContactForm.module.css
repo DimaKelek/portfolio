@@ -166,6 +166,9 @@ textarea:focus {
         left: 180px;
         top: 230px;
     }
+    .title h2 {
+        font-size: 30px;
+    }
 }
 @media screen and (max-width: 545px) {
     .ts, .redux, .html5, .css3, .jest {
@@ -223,6 +226,9 @@ textarea:focus {
     .html5, .css3 {
         left: 120px;
         top: 160px;
+    }
+    .title h2 {
+        font-size: 25px;
     }
     @keyframes orbit {
         from { transform: rotate(0deg) translateX(20px) rotate(0deg); }

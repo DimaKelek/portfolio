@@ -3,12 +3,11 @@
     color: white;
     font-size: 20px;
     font-family: Poppins, serif;
-    transition-duration: .5s;
+    transition: .5s;
 }
 
 .link:hover {
     color: #0d82c6;
-    transition: .5s;
 }
 
 .menu:hover {

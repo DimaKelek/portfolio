@@ -6,7 +6,7 @@ import photo from "../../common/others/photo.jpg"
 
 export function Main() {
     return (
-        <div className={S.main}>
+        <div id="HOME" className={S.main}>
             <div className={Sc.main_container}>
                 <div className={`${S.discription} ${Sc.discription_container}`}>
                     <span className={S.hello}>Hello, I'm</span>
@@ -19,6 +19,7 @@ export function Main() {
                     <img className={S.photo} src={photo} alt="photo"/>
                 </div>
             </div>
+
         </div>
     );
 }

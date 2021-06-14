@@ -8,7 +8,7 @@ import {skills} from "../data";
 export function Skills() {
     const skillsItems = skills.map((s, i) => <SkillsItem key={i} title={s.title} icon={s.icon} text={s.text}/>)
     return (
-        <div className={Sc.skills_container}>
+        <div id="ABOUT" className={Sc.skills_container}>
             <div className={`${Sc.container} ${S.title}`}>
                 <span>About me</span>
                 <h2>Skills</h2>
