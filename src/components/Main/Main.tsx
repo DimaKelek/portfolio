@@ -16,7 +16,7 @@ export function Main() {
                     <div className={Sc.socialNetworks_container}><SocialNetworks/></div>
                 </div>
                 <div className={Sc.photo_container}>
-                    <img className={S.photo} src={photo} alt="photo"/>
+                    <img className={S.photo} src={photo} alt="MyPhoto"/>
                 </div>
             </div>
 

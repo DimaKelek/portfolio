@@ -20,7 +20,7 @@ export function ContactForm() {
             <div className={Sc.form_container}>
                 <div className={Sc.image_container}>
                     <div className={Sc.chakres_box}>
-                        <img className={S.chakres} src={chakres} alt="image"/>
+                        <img className={S.chakres} src={chakres} alt="chakres"/>
                         <div className={S.react}><img src={iconReact} alt="React"/></div>
                         <div className={S.ts}><img src={iconTS} alt="TS"/></div>
                         <div className={S.redux}><img src={iconRedux} alt="Redux"/></div>

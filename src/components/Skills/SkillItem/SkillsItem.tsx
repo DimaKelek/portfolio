@@ -13,12 +13,12 @@ export function SkillsItem(props: SkillItemPT) {
         <div className={S.item}>
             <div className={S.skill}>
                 <div className={S.icon}>
-                    <img src={props.icon} alt="icon"/>
+                    <img src={props.icon} alt="skillIcon"/>
                 </div>
                 <h3>{props.title}</h3>
                 <p>{props.text}</p>
                 <div className={S.triangle}>
-                    <div><img src={triangle} alt="image"/></div>
+                    <div><img src={triangle} alt="triangle"/></div>
                 </div>
             </div>
         </div>
