@@ -15,30 +15,32 @@
     text-transform: uppercase;
 }
 
-
 .form_group {
-    padding: 10px;
+    padding: 10px 0;
 }
 
 .form_group input {
     height: 28px;
-    padding: 10px 15px;
+    padding: 10px 0 10px 15px  ;
     color: #ffffff;
     background-color: #0c0c0c;
     border: 1px solid #0c0c0c;
     border-radius: 5px;
     font-size: 14px;
     width: 100%;
+    outline: none;
+    transition-duration: .5s;
 }
 .form_group input:focus {
-    border: 1px solid #0c0c0c;
-    transition: 2s;
+    border: 1px solid #2f2f2f;
+    transition: .5s;
 }
 
 textarea {
+    border: 1px solid #0c0c0c;
     background-color: #0c0c0c;
     font-family: Poppins, serif;
-    padding: 10px 15px;
+    padding: 10px 0 10px 15px;
     cursor: text;
     color: #ffffff;
     overflow: auto;
@@ -50,22 +52,32 @@ textarea {
     transition: .5s;
     overflow-wrap: break-word;
     width: 100%;
+    outline: none;
+}
+
+textarea:focus {
+    border: 1px solid #2f2f2f;
+    transition: .5s;
 }
 
 .chakres {
     width: 100%;
 }
 
-.icon {
+.ts, .redux, .html5, .css3, .jest {
     width: 40px;
     height: 40px;
     position: absolute;
     top: 0;
     left: 0;
 }
-
-.icon img {
+.ts img, .redux img, .html5 img, .css3 img, .jest img {
     width: 100%;
+}
+
+.ts, .redux, .react img, .html5, .css3, .jest {
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
 .ts {
@@ -74,17 +86,16 @@ textarea {
     animation-name: heart;
     animation-duration: 1s;
     animation-delay: 1s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-}
 
+}
 .redux {
     top: 20px;
     left: 230px;
+}
+
+.redux, .react img {
     animation-name: rotation;
     animation-duration: 4s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
 }
 
 .react {
@@ -92,39 +103,25 @@ textarea {
     width: 70px;
     top: 110px;
     left: 215px;
-    animation-name: rotation;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-}
-
-.html5 {
-    left: 230px;
-    top: 280px;
-    animation-name: orbit;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
 }
 
 .css3 {
+    animation-delay: 1s;
+}
+
+.html5, .css3 {
     left: 230px;
     top: 280px;
     animation-name: orbit;
     animation-duration: 3s;
-    animation-delay: 1s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
 }
 
 .jest {
     top: 180px;
     left: 200px;
-    animation-name: heart;
+    animation-name: breath;
     animation-duration: 5s;
     animation-delay: 1s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
 }
 
 @keyframes rotation {
@@ -143,73 +140,92 @@ textarea {
     75% {transform: scale(1.2);}
 }
 @keyframes breath {
-    0% {transform: scale(0.5);}
-    25% {transform: scale(1.9);}
-    50% {transform: scale(1.5);}
-    60% {transform: scale(1.3);}
-    75% {transform: scale(1.1);}
-    100% {transform: scale(0.5);}
+    0%, 100% {transform: scale(0.5);}
+    25% {transform: scale(1.1);}
+    50% {transform: scale(1);}
 }
 
 @media screen and (max-width: 1080px) {
-    .ts {
-        top: 120px;
-        left: 245px;
-    }
-
     .redux {
         top: 10px;
-        left: 205px;
-    }
-
-    .react {
-        top: 90px;
-        left: 190px;
-    }
-
-    .html5 {
-        left: 210px;
-        top: 260px;
-    }
-
-    .css3 {
-        left: 210px;
-        top: 260px;
-    }
-
-    .jest {
-        top: 160px;
         left: 180px;
     }
-}
-@media screen and (max-width: 630px) {
+    .react {
+        top: 75px;
+        left: 165px;
+    }
     .ts {
         top: 140px;
         left: 205px;
     }
-
-    .redux {
-        top: 5px;
-        left: 182px;
-    }
-
-    .react {
-        top: 70px;
-        left: 165px;
-    }
-
-    .html5 {
-        left: 180px;
-        top: 240px;
-    }
-
-    .css3 {
-        left: 180px;
-        top: 240px;
-    }
-
     .jest {
         top: 140px;
         left: 160px;
+    }
+    .html5, .css3 {
+        left: 180px;
+        top: 230px;
+    }
+}
+@media screen and (max-width: 545px) {
+    .ts, .redux, .html5, .css3, .jest {
+        width: 30px;
+        height: 30px;
+    }
+    .redux {
+        top: 10px;
+        left: 135px;
+    }
+    .react {
+        width: 50px;
+        top: 55px;
+        left: 125px;
+    }
+    .ts {
+        top: 110px;
+        left: 155px;
+    }
+    .jest {
+        top: 110px;
+        left: 120px;
+    }
+    .html5, .css3 {
+        left: 140px;
+        top: 170px;
+    }
+    @keyframes orbit {
+        from { transform: rotate(0deg) translateX(20px) rotate(0deg); }
+        to   { transform: rotate(360deg) translateX(20px) rotate(-360deg); }
+    }
+}
+@media screen and (max-width: 290px) {
+    .ts, .redux, .html5, .css3, .jest {
+        width: 25px;
+        height: 25px;
+    }
+    .redux {
+        top: 10px;
+        left: 122px;
+    }
+    .react {
+        width: 40px;
+        top: 55px;
+        left: 116px;
+    }
+    .ts {
+        top: 93px;
+        left: 140px;
+    }
+    .jest {
+        top: 93px;
+        left: 110px;
+    }
+    .html5, .css3 {
+        left: 120px;
+        top: 160px;
+    }
+    @keyframes orbit {
+        from { transform: rotate(0deg) translateX(20px) rotate(0deg); }
+        to   { transform: rotate(360deg) translateX(20px) rotate(-360deg); }
     }
 }

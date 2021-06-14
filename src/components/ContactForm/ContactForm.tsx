@@ -21,15 +21,15 @@ export function ContactForm() {
                 <div className={Sc.image_container}>
                     <div className={Sc.chakres_box}>
                         <img className={S.chakres} src={chakres} alt="image"/>
-                        <div className={`${S.react}`}><img src={iconReact} alt="React"/></div>
-                        <div className={`${S.icon} ${S.ts}`}><img src={iconTS} alt="TS"/></div>
-                        <div className={`${S.icon} ${S.redux}`}><img src={iconRedux} alt="Redux"/></div>
-                        <div className={`${S.icon} ${S.html5}`}><img src={iconHTML} alt="HTML"/></div>
-                        <div className={`${S.icon} ${S.css3}`}><img src={iconCSS} alt="CSS"/></div>
-                        <div className={`${S.icon} ${S.jest}`}><img src={iconJest} alt="Jest"/></div>
+                        <div className={S.react}><img src={iconReact} alt="React"/></div>
+                        <div className={S.ts}><img src={iconTS} alt="TS"/></div>
+                        <div className={S.redux}><img src={iconRedux} alt="Redux"/></div>
+                        <div className={S.html5}><img src={iconHTML} alt="HTML"/></div>
+                        <div className={S.css3}><img src={iconCSS} alt="CSS"/></div>
+                        <div className={S.jest}><img src={iconJest} alt="Jest"/></div>
                     </div>
                 </div>
-                <div className={Sc.form_elements_box}>
+                <form>
                     <div className={Sc.namePLUSemail_container}>
                         <div className={`${S.form_group} ${S.name}`}>
                             <input type="text" placeholder="Your name"/>
@@ -47,7 +47,7 @@ export function ContactForm() {
                     <div className={`${S.form_group} ${S.button}`}>
                     <MyButton>Send Message</MyButton>
                 </div>
-            </div>
+            </form>
             </div>
         </div>
     )

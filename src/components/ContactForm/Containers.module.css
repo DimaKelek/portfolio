@@ -18,10 +18,10 @@
     align-items: start;
 }
 
-.form_elements_box {
-    width: 500px;
+form {
+    width: 100%;
     min-height: 500px;
-    padding: 40px 35px 90px 60px;
+    padding: 50px 70px;
 }
 
 .image_container {
@@ -37,9 +37,11 @@
 }
 
 .namePLUSemail_container {
+    width: 100%;
     display: flex;
     justify-content: space-between;
 }
+
 @media screen and (max-width: 1435px) {
     .container {
         width: 80%;
@@ -48,51 +50,57 @@
         width: 80%;
     }
 }
+
 @media screen and (max-width: 1345px) {
     .container {
-        width: 90%;
+        width: 95%;
     }
     .form_container {
-        width: 90%;
+        width: 95%;
     }
     .namePLUSemail_container {
         flex-direction: column;
     }
 }
+
 @media screen and (max-width: 1080px) {
     .chakres_box {
-        width: 450px;
+        width: 400px;
     }
 }
 @media screen and (max-width: 935px) {
-    .chakres_box {
-        width: 450px;
-    }
     .form_container {
         flex-direction: column;
         align-items: center;
     }
-    .form_elements_box {
-        padding: 40px 20px 70px 0;
+    form {
+        width: 80%;
+    }
+}
+@media screen and (max-width: 765px) {
+    form {
+        padding: 40px 30px;
     }
 }
 
-@media screen and (max-width: 630px) {
-    .form_elements_box {
-        width: 400px;
-
-    }
+@media screen and (max-width: 545px) {
     .chakres_box {
-        width: 400px;
+        width: 300px;
+    }
+    form {
+        padding: 40px 30px 5px;
     }
 }
-@media screen and (max-width: 500px) {
-    .form_elements_box {
-        width: 300px;
-
+@media screen and (max-width: 350px) {
+    form {
+        padding: 40px 30px 5px;
     }
+}
+@media screen and (max-width: 290px) {
     .chakres_box {
-        width: 300px;
-
+        width: 270px;
+    }
+    form {
+        padding: 20px 30px 5px;
     }
 }
