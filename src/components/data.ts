@@ -84,7 +84,7 @@ export type ContactType = {
 }
 
 export const contacts: Array<ContactType> = [
-    {title: "Address", icon: iconLocation, contactData: "Zalupa City Otsosite"},
-    {title: "Email", icon: iconEmail, contactData: "Zalupa@gmail.com"},
-    {title: "Phone", icon: iconPhone, contactData: "+2334 328 "},
+    {title: "Address", icon: iconLocation, contactData: "Minsk City"},
+    {title: "Email", icon: iconEmail, contactData: "kelekofficial@gmail.com"},
+    {title: "Phone", icon: iconPhone, contactData: "+123 456 7890 "},
 ]
