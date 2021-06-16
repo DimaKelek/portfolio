@@ -6,6 +6,7 @@
     justify-content: space-between;
     align-items: center;
     margin-top: 50px;
+    transition: .5s;
 }
 
 .discription_container {
@@ -13,10 +14,12 @@
     font-family: Poppins, serif;
     display: flex;
     flex-direction: column;
+    transition: .5s;
 }
 
 .photo_container {
     height: 600px;
+    transition: .5s;
 }
 
 @media screen and (max-width: 1236px){
@@ -53,10 +56,6 @@
 }
 
 @media screen and (max-width: 281px) {
-    .discription_container {
-
-    }
-
     .photo_container {
         height: 300px;
     }

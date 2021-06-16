@@ -65,14 +65,14 @@ export const projects: Array<ProjectType> = [
         date: "May 15, 2021",
         title: "Social Network",
         discription: "",
-        link: "https://github.com/DimaKelek/network",
+        link: "",
         photo: network
     },
     {
         date: "May 15, 2021",
         title: "To do list",
         discription: "",
-        link: "https://github.com/DimaKelek/todolist",
+        link: "",
         photo: todolist
     }
 ]

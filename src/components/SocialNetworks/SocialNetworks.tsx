@@ -14,7 +14,7 @@ export function SocialNetworks() {
                     <div className={S.icon}><img src={telegram} alt="telegram"/></div>
                 </div>
             </a>
-            <a href="https://github.com/DimaKelek" target="_blank" rel="noreferrer">
+            <a href="" target="_blank" rel="noreferrer">
                 <div className={S.icon_box}>
                     <div className={S.icon}><img src={github} alt="github"/></div>
                 </div>
@@ -29,7 +29,7 @@ export function SocialNetworks() {
                     <div className={S.icon}><img src={vk} alt="vk"/></div>
                 </div>
             </a>
-            <a href="https://www.linkedin.com/in/dimakelek/" target="_blank" rel="noreferrer">
+            <a href="" target="_blank" rel="noreferrer">
                 <div className={S.icon_box}>
                     <div className={S.icon}><img src={linkedIn} alt="linkedIn"/></div>
                 </div>
