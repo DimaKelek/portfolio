@@ -24,18 +24,6 @@ form {
     padding: 50px 70px;
 }
 
-.image_container {
-    padding-top: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.chakres_box {
-    width: 500px;
-    position: relative;
-}
-
 .namePLUSemail_container {
     width: 100%;
     display: flex;
@@ -63,11 +51,6 @@ form {
     }
 }
 
-@media screen and (max-width: 1080px) {
-    .chakres_box {
-        width: 400px;
-    }
-}
 @media screen and (max-width: 935px) {
     .form_container {
         flex-direction: column;
