@@ -1,16 +1,19 @@
-import iconReact from "./icons/react.svg"
-import iconTS from "./icons/typescript.svg"
-import iconRedux from "./icons/redux.svg"
-import iconHTML from "./icons/html5.svg"
-import iconCSS from "./icons/css3.svg"
-import iconJest from "./icons/jest.png"
+import iconReact from "../icons/react.svg"
+import iconTS from "../icons/typescript.svg"
+import iconRedux from "../icons/redux.svg"
+import iconHTML from "../icons/html5.svg"
+import iconCSS from "../icons/css3.svg"
+import iconJest from "../icons/jest.png"
+import axios from "../icons/256.png"
+import material from "../icons/logo_raw.svg"
+import postman from "../icons/lifecycle.svg"
 
-import iconLocation from "./icons/location.png"
-import iconEmail from "./icons/message.png"
-import iconPhone from "./icons/phone.png"
+import iconLocation from "../icons/location.png"
+import iconEmail from "../icons/message.png"
+import iconPhone from "../icons/phone.png"
 
-import network from "./others/network.jpg"
-import todolist from "./others/todolist.jpg"
+import network from "../others/network.jpg"
+import todolist from "../others/todolist.jpg"
 
 export type SkillsType = {
     title: string
@@ -37,6 +40,15 @@ export const skills: Array<SkillsType> = [
     {title: "Jest", icon: iconJest,
         text: "Jest is a JavaScript testing framework designed to ensure that any code runs correctly. It allows you to " +
             "write tests with an acceptable and functional API and get the results you want quickly."},
+    {title: "Axios", icon: axios,
+        text: "Axios is a simple promise based HTTP client for the browser and node.js. Axios provides a simple to use " +
+            "library in a small package with a very extensible interface."},
+    {title: "Material UI", icon: material,
+        text: "An open source library that includes React components that implement Google's Material Design. It is built " +
+            "using Less, a backward-compatible language extension for CSS."},
+    {title: "Postman", icon: postman,
+        text: "Is a powerful set of tools for API testing. It is a development environment that allows you to create, test, " +
+            "control, and publish documentation for the API."},
 ]
 
 export type NavType = {
@@ -57,22 +69,36 @@ export type ProjectType = {
     title: string
     discription: string
     link: string
+    preview: string
     photo: string
 }
-
+type submitFormDataType = {
+    serverID: string
+    templateID: string
+    apiKey: string
+}
+export const submitFormData: submitFormDataType = {
+    serverID: "service_kqtzcqb",
+    templateID: "template_s2n0xe4",
+    apiKey: "user_yTe6Z7ffvqPt79BSoz5uX"
+}
 export const projects: Array<ProjectType> = [
     {
         date: "May 15, 2021",
         title: "Social Network",
-        discription: "",
-        link: "",
+        discription: "Social network created using React, Redux, formik libraries. During the development were used " +
+            "modern approaches to the development of SPA",
+        link: "https://github.com/DimaKelek/network",
+        preview: "https://dimakelek.github.io/network/",
         photo: network
     },
     {
         date: "May 15, 2021",
         title: "To do list",
-        discription: "",
-        link: "",
+        discription: "Applications for planning, tracking and easy sorting of tasks. Nice design and user-friendly " +
+            "interface allows you not to forget anything and complete tasks on time",
+        link: "https://github.com/DimaKelek/todolist",
+        preview: "",
         photo: todolist
     }
 ]

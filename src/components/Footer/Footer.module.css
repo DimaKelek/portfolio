@@ -49,15 +49,17 @@
 
 .info_block {
     min-height: 300px;
-    width: 300px;
+    width: 400px;
     color: #c1bfbf;
 }
 
 .info_block p{
+    font-size: 14px;
     margin-bottom: 20px;
 }
 
 .contacts_block {
+    padding-top: 25px;
     min-height: 300px;
     width: 300px;
 }

@@ -2,20 +2,15 @@ import React, {FormEventHandler} from "react";
 import emailjs from 'emailjs-com';
 import S from "./MyForm.module.css";
 import {MyButton} from "../../../common/MyButton/MyButton";
+import {submitFormData} from "../../../common/utils/data";
 
-type FormikErrorType = {
-    name?: string
-    email?: string
-    subject?: string
-    message?: string
-}
+
 
 export const MyForm: React.FC<any> = props => {
 
     const sendMessage: FormEventHandler<HTMLFormElement> = e => {
         e.preventDefault()
-        emailjs.sendForm("service_kqtzcqb", "template_s2n0xe4",
-            e.currentTarget, "user_yTe6Z7ffvqPt79BSoz5uX")
+        emailjs.sendForm(submitFormData.serverID, submitFormData.templateID, e.currentTarget, submitFormData.apiKey)
             .then(result => {
                 console.log(result.text);
             }).catch(error => {

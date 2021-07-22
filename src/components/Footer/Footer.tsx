@@ -2,7 +2,7 @@ import React from "react";
 import S from "./Footer.module.css"
 import logo2 from "../../common/others/logo2.jpg";
 import {SocialNetworks} from "../../common/SocialNetworks/SocialNetworks";
-import {contacts} from "../../common/data";
+import {contacts} from "../../common/utils/data";
 
 export function Footer() {
     const contactItems = contacts.map((c, i) => {
@@ -24,8 +24,10 @@ export function Footer() {
                 <div className={S.content_box}>
                     <div className={S.info_block}>
                         <img className={S.logo} src={logo2} alt="logo"/>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At deserunt
-                            dolores, inventore molestiae nisi odio officiis provident soluta tempore vel?</p>
+                        <p>I'm Front-End developer with experience in creating SPA using React, Redux, Typescript,
+                            Javascript, HTML, CSS. My free time is dedicated to Codewars,
+                            programming tutorials, and becoming familiar with NodeJS, because, in the future,
+                            I see myself as a Full Stack Developer.</p>
                         <div className={S.socialNetwork_box}><SocialNetworks/></div>
                     </div>
                     <div className={S.contacts_block}>
