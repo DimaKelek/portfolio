@@ -1,16 +1,16 @@
-import iconReact from "../common/icons/react.svg"
-import iconTS from "../common/icons/typescript.svg"
-import iconRedux from "../common/icons/redux.svg"
-import iconHTML from "../common/icons/html5.svg"
-import iconCSS from "../common/icons/css3.svg"
-import iconJest from "../common/icons/jest.png"
+import iconReact from "./icons/react.svg"
+import iconTS from "./icons/typescript.svg"
+import iconRedux from "./icons/redux.svg"
+import iconHTML from "./icons/html5.svg"
+import iconCSS from "./icons/css3.svg"
+import iconJest from "./icons/jest.png"
 
-import iconLocation from "../common/icons/location.png"
-import iconEmail from "../common/icons/message.png"
-import iconPhone from "../common/icons/phone.png"
+import iconLocation from "./icons/location.png"
+import iconEmail from "./icons/message.png"
+import iconPhone from "./icons/phone.png"
 
-import network from "../common/others/network.jpg"
-import todolist from "../common/others/todolist.jpg"
+import network from "./others/network.jpg"
+import todolist from "./others/todolist.jpg"
 
 export type SkillsType = {
     title: string

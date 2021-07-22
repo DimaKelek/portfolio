@@ -1,10 +1,10 @@
 import React from "react";
 import S from "./SocialNetworks.module.css";
-import telegram from "../../common/icons/telegram.svg"
-import instagram from "../../common/icons/instagram.svg"
-import github from "../../common/icons/github.svg"
-import linkedIn from "../../common/icons/linkedin.svg"
-import vk from "../../common/icons/vk.svg"
+import telegram from "../icons/telegram.svg"
+import instagram from "../icons/instagram.svg"
+import github from "../icons/github.svg"
+import linkedIn from "../icons/linkedin.svg"
+import vk from "../icons/vk.svg"
 
 export function SocialNetworks() {
     return (

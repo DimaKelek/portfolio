@@ -1,8 +1,8 @@
 import React from "react";
 import S from "./ContactForm.module.css"
 import Sc from "./Containers.module.css";
-import {MyButton} from "./MyButton/MyButton";
 import {FrontEndMan} from "./FrontEndMan/FrontEndMan";
+import {MyForm} from "./MyFrom/MyForm";
 
 export function ContactForm() {
     return (
@@ -13,25 +13,7 @@ export function ContactForm() {
             </div>
             <div className={Sc.form_container}>
                 <FrontEndMan/>
-                <form>
-                    <div className={Sc.namePLUSemail_container}>
-                        <div className={`${S.form_group} ${S.name}`}>
-                            <input type="text" placeholder="Your name"/>
-                        </div>
-                        <div className={`${S.form_group} ${S.email}`}>
-                            <input type="text" placeholder="Your email"/>
-                        </div>
-                    </div>
-                    <div className={`${S.form_group} ${S.subject}`}>
-                        <input type="text" placeholder="Your subject"/>
-                    </div>
-                    <div className={`${S.form_group} ${S.message}`}>
-                        <textarea placeholder="Your message"/>
-                    </div>
-                    <div className={`${S.form_group} ${S.button}`}>
-                    <MyButton>Send Message</MyButton>
-                </div>
-            </form>
+                <MyForm/>
             </div>
         </div>
     )

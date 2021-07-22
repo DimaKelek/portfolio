@@ -18,18 +18,6 @@
     align-items: flex-start;
 }
 
-form {
-    width: 100%;
-    min-height: 500px;
-    padding: 50px 70px;
-}
-
-.namePLUSemail_container {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-
 @media screen and (max-width: 1435px) {
     .container {
         width: 80%;
@@ -46,44 +34,11 @@ form {
     .form_container {
         width: 95%;
     }
-    .namePLUSemail_container {
-        flex-direction: column;
-    }
 }
 
 @media screen and (max-width: 935px) {
     .form_container {
         flex-direction: column;
         align-items: center;
-    }
-    form {
-        width: 80%;
-    }
-}
-@media screen and (max-width: 765px) {
-    form {
-        padding: 40px 30px;
-    }
-}
-
-@media screen and (max-width: 545px) {
-    .chakres_box {
-        width: 300px;
-    }
-    form {
-        padding: 40px 30px 5px;
-    }
-}
-@media screen and (max-width: 350px) {
-    form {
-        padding: 40px 30px 5px;
-    }
-}
-@media screen and (max-width: 290px) {
-    .chakres_box {
-        width: 270px;
-    }
-    form {
-        padding: 20px 30px 5px;
     }
 }

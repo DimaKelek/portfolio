@@ -1,7 +1,7 @@
 import React from "react";
 import S from "./Nav.module.css"
 import Sc from "../Containers.module.css"
-import {nav} from "../../data";
+import {nav} from "../../../common/data";
 
 type NavPropsType = {
     collapsed: boolean

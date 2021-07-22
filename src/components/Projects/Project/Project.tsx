@@ -1,6 +1,6 @@
 import React from "react";
 import S from "./Project.module.css"
-import {ProjectType} from "../../data";
+import {ProjectType} from "../../../common/data";
 
 type ProjectsPropsType = ProjectType
 

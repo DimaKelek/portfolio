@@ -2,7 +2,7 @@ import React from "react";
 import S from "./Skills.module.css"
 import Sc from "./Containers.module.css"
 import {SkillsItem} from "./SkillItem/SkillsItem";
-import {skills} from "../data";
+import {skills} from "../../common/data";
 
 
 export function Skills() {

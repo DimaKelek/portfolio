@@ -1,7 +1,7 @@
 import React from "react";
 import S from "./Main.module.css"
 import Sc from "./Containers.module.css"
-import {SocialNetworks} from "../SocialNetworks/SocialNetworks";
+import {SocialNetworks} from "../../common/SocialNetworks/SocialNetworks";
 import photo from "../../common/others/photo.jpg"
 
 export function Main() {

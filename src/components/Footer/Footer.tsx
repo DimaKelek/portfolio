@@ -1,8 +1,8 @@
 import React from "react";
 import S from "./Footer.module.css"
 import logo2 from "../../common/others/logo2.jpg";
-import {SocialNetworks} from "../SocialNetworks/SocialNetworks";
-import {contacts} from "../data";
+import {SocialNetworks} from "../../common/SocialNetworks/SocialNetworks";
+import {contacts} from "../../common/data";
 
 export function Footer() {
     const contactItems = contacts.map((c, i) => {

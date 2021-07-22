@@ -2,7 +2,7 @@ import React from "react";
 import S from "./Projects.module.css"
 import Sc from "./Containers.module.css"
 import {Project} from "./Project/Project";
-import {projects} from "../data"
+import {projects} from "../../common/data"
 
 export function Projects() {
     const projectItems = projects.map((p, i) => {
