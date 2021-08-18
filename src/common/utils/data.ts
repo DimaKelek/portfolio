@@ -73,16 +73,7 @@ export type ProjectType = {
     preview: string
     photo: string
 }
-type submitFormDataType = {
-    serverID: string
-    templateID: string
-    apiKey: string
-}
-export const submitFormData: submitFormDataType = {
-    serverID: "service_kqtzcqb",
-    templateID: "template_s2n0xe4",
-    apiKey: "user_yTe6Z7ffvqPt79BSoz5uX"
-}
+
 export const projects: Array<ProjectType> = [
     {
         date: "May 15, 2021",
