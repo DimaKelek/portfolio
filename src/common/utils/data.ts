@@ -14,6 +14,7 @@ import iconPhone from "../icons/phone.png"
 
 import network from "../others/network.jpg"
 import todolist from "../others/todolist.jpg"
+import cards from "../others/cards.jpg"
 
 export type SkillsType = {
     title: string
@@ -98,8 +99,17 @@ export const projects: Array<ProjectType> = [
         discription: "Applications for planning, tracking and easy sorting of tasks. Nice design and user-friendly " +
             "interface allows you not to forget anything and complete tasks on time",
         link: "https://github.com/DimaKelek/todolist",
-        preview: "",
+        preview: "https://dimakelek.github.io/todolist",
         photo: todolist
+    },
+    {
+        date: "August 10, 2021",
+        title: "Card learning",
+        discription: "Applications for card learning. You can create your decks or using decks your friends. " +
+            "You can grade the cards and cards that have lower grade will fall out more often.",
+        link: "https://github.com/DimaKelek/friday13th-solo",
+        preview: "https://dimakelek.github.io/friday13th-solo/",
+        photo: cards
     }
 ]
 

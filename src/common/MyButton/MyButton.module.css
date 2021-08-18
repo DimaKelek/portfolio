@@ -80,7 +80,22 @@
     box-shadow: 0 0 0 2px #636363;
 }
 
-.button:disabled {
+.button.standard:disabled {
+    color: #d2d5db;
+    background: #6c7589;
+    cursor: default;
+}
+.button.light:disabled {
+    color: #d2d5db;
+    background: #6c7589;
+    cursor: default;
+}
+.button.purple:disabled {
+    color: #d2d5db;
+    background: #6c7589;
+    cursor: default;
+}
+.button.dark:disabled {
     color: #d2d5db;
     background: #6c7589;
     cursor: default;

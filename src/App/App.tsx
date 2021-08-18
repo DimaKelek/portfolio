@@ -8,7 +8,7 @@ import {ContactForm} from "../components/ContactForm/ContactForm";
 import {Projects} from "../components/Projects/Projects";
 import {MiniNav} from "../components/Header/Nav/MiniNav/MiniNav";
 
-function App() {
+const App = () => {
     return (
         <div className="App">
             <Header />
