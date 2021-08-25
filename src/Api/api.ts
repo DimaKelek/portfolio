@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const instanse = axios.create({
-    baseURL: "http://localhost:7777"
+    baseURL: "https://kelek-dev-server.herokuapp.com"
 })
 
 export const messageApi = {
