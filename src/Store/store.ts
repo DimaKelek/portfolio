@@ -25,10 +25,14 @@ import about from "../Components/S1-Common/Icons/about.svg"
 import projects from "../Components/S1-Common/Icons/projects.png"
 import contacts from "../Components/S1-Common/Icons/contacts.svg"
 import {v1} from "uuid";
-import {createContext, useContext} from "react";
+import {messageApi, MessageDataType} from "../Api/api";
+
+type StatusType = "failed" | "idle" | "loading" | "success"
 
 export const StoreModel = types
     .model("RootStore", {
+        status: types.string,
+        error: types.maybe(types.string),
         links: types.array(LinkModel),
         contacts: types.array(ContactModel),
         skills: types.array(SkillsModel),
@@ -44,11 +48,24 @@ export const StoreModel = types
             })
             let index = store.nav.findIndex(i => i.id === navItemID)
             store.nav[index].status = true
-            console.log(store.nav[index])
+        },
+        setSendMessageStatus(newStatus: StatusType) {
+            store.status = newStatus
+        },
+        async sendMessage(values: MessageDataType) {
+            store.status = "loading"
+            try {
+                await messageApi.send({...values})
+                store.status = "success"
+            } catch (e) {
+                store.error = "Some error"
+                store.status = "failed"
+            }
         }
     }))
 
 export const store = StoreModel.create({
+    status: "idle",
     links: [
         {id: v1(), image: telegram, link: "https://t.me/KelekOfficial"},
         {id: v1(), image: github, link: "https://github.com/DimaKelek"},

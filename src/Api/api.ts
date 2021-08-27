@@ -5,12 +5,12 @@ const instanse = axios.create({
 })
 
 export const messageApi = {
-    send(values: messageDataType) {
+    send(values: MessageDataType) {
         return instanse.post(`/send`, {...values})
     }
 }
 
-type messageDataType = {
+export type MessageDataType = {
     name: string
     email: string
     subject: string

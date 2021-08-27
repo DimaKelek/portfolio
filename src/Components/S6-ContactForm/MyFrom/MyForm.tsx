@@ -4,6 +4,9 @@ import {messageApi} from "../../../Api/api";
 import { useFormik } from "formik";
 import {MyTextInput} from "../../S1-Common/Components/MyTextInput/MyTextInput";
 import {MyButton} from "../../S1-Common/Components/MyButton/MyButton";
+import {Preloader} from "../../S1-Common/Components/Preloader/Preloader";
+import {observer} from "mobx-react-lite";
+import {useMobXStore} from "../../../Store/Context";
 
 type FormErrors = {
     name?: string
@@ -12,8 +15,9 @@ type FormErrors = {
     message?: string
 }
 
-export const MyForm: React.FC<any> = props => {
+export const MyForm: React.FC = observer(() => {
     const [send, setSend] = useState<boolean>(false)
+    const {status, error, sendMessage} = useMobXStore()
 
     const contactForm = useFormik({
         initialValues: {
@@ -58,6 +62,7 @@ export const MyForm: React.FC<any> = props => {
                 subject: "Subject is required!"
             }
         }
+        sendMessage(contactForm.values)
     }
 
     return (
@@ -89,9 +94,16 @@ export const MyForm: React.FC<any> = props => {
                 />
             </div>
             <div className={`${S.form_group} ${S.button}`}>
-                <MyButton onClick={onSendClick} type={"submit"}>Send Message</MyButton>
+                {status === "loading"
+                    ? <Preloader/>
+                    : <MyButton onClick={onSendClick} type={"submit"}>Send Message</MyButton>
+                }
             </div>
-            {send && <h3>Your message has been sended!!</h3>}
+            {status === "success"
+                ? <h3 style={{color: "#14aa6b"}}>Your message has been send</h3>
+                : status === "failed" ? <h3 style={{color: "#d41c50"}}>Something wrong :С "{error ?? "Code 228"}"</h3>
+                    : ""
+            }
         </form>
     )
-}
+})
