@@ -1,7 +1,6 @@
-import React, {useState} from "react";
+import React from "react";
 import S from "./MyForm.module.css";
-import {messageApi} from "../../../Api/api";
-import { useFormik } from "formik";
+import {useFormik} from "formik";
 import {MyTextInput} from "../../S1-Common/Components/MyTextInput/MyTextInput";
 import {MyButton} from "../../S1-Common/Components/MyButton/MyButton";
 import {Preloader} from "../../S1-Common/Components/Preloader/Preloader";
@@ -16,7 +15,6 @@ type FormErrors = {
 }
 
 export const MyForm: React.FC = observer(() => {
-    const [send, setSend] = useState<boolean>(false)
     const {status, error, sendMessage} = useMobXStore()
 
     const contactForm = useFormik({
@@ -42,14 +40,9 @@ export const MyForm: React.FC = observer(() => {
             }
             return errors
         },
-        onSubmit: async values => {
-            try {
-                await messageApi.send({...values})
-                setSend(true)
-                contactForm.resetForm()
-            } catch (e) {
-                console.log("some error")
-            }
+        onSubmit: values => {
+            sendMessage(values)
+            contactForm.resetForm()
         }
     })
 
@@ -62,7 +55,6 @@ export const MyForm: React.FC = observer(() => {
                 subject: "Subject is required!"
             }
         }
-        sendMessage(contactForm.values)
     }
 
     return (
@@ -98,12 +90,9 @@ export const MyForm: React.FC = observer(() => {
                     ? <Preloader/>
                     : <MyButton onClick={onSendClick} type={"submit"}>Send Message</MyButton>
                 }
+                {status === "success" ? <h3 style={{color: "#14aa6b"}}>&#9989; Your message has been send</h3> : ""}
+                {error && <h3 style={{color: "#d41c50"}}>&#10060; Error: {error}</h3>}
             </div>
-            {status === "success"
-                ? <h3 style={{color: "#14aa6b"}}>Your message has been send</h3>
-                : status === "failed" ? <h3 style={{color: "#d41c50"}}>Something wrong :С "{error ?? "Code 228"}"</h3>
-                    : ""
-            }
         </form>
     )
 })

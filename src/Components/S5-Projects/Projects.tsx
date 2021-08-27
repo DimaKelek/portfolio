@@ -1,5 +1,4 @@
 import React from "react";
-import S from "./Containers.module.css"
 import Sc from "../S1-Common/Styles/CommonStyles.module.css"
 import {Project} from "./Project/Project";
 import {useMobXStore} from "../../Store/Context";

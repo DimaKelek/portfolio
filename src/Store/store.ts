@@ -1,4 +1,4 @@
-import {types} from "mobx-state-tree"
+import {flow, types} from "mobx-state-tree"
 import telegram from "../Components/S1-Common/Icons/telegram.svg"
 import github from "../Components/S1-Common/Icons/github.svg"
 import instagram from "../Components/S1-Common/Icons/instagram.svg"
@@ -27,11 +27,9 @@ import contacts from "../Components/S1-Common/Icons/contacts.svg"
 import {v1} from "uuid";
 import {messageApi, MessageDataType} from "../Api/api";
 
-type StatusType = "failed" | "idle" | "loading" | "success"
-
 export const StoreModel = types
     .model("RootStore", {
-        status: types.string,
+        status: types.enumeration("Status", ["failed", "idle", "loading", "success"]),
         error: types.maybe(types.string),
         links: types.array(LinkModel),
         contacts: types.array(ContactModel),
@@ -49,19 +47,22 @@ export const StoreModel = types
             let index = store.nav.findIndex(i => i.id === navItemID)
             store.nav[index].status = true
         },
-        setSendMessageStatus(newStatus: StatusType) {
-            store.status = newStatus
-        },
-        async sendMessage(values: MessageDataType) {
+        sendMessage: flow(function* (values: MessageDataType) {
             store.status = "loading"
+            store.error = ""
             try {
-                await messageApi.send({...values})
-                store.status = "success"
+                const res = yield messageApi.send({...values})
+                if(res.data.statusCode === 0) {
+                    store.status = "success"
+                } else {
+                    store.error = res.data.messages[0]
+                    store.status = "failed"
+                }
             } catch (e) {
-                store.error = "Some error"
+                store.error = "Something wrong :С"
                 store.status = "failed"
             }
-        }
+        })
     }))
 
 export const store = StoreModel.create({
