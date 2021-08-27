@@ -1,0 +1,41 @@
+.title {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 80px;
+    font-family: Poppins, serif;
+    transition: .5s;
+}
+
+.title h2 {
+    color: #ffffff;
+    font-size: 40px;
+    padding-bottom: 20px;
+    border-bottom: 3px solid #0d82c6;
+    transition: .5s;
+}
+
+.title span {
+    color: #0d82c6;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 1420px){
+    .container {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .title h2 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 290px) {
+    .title h2 {
+        font-size: 25px;
+    }
+}
+

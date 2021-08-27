@@ -1,0 +1,157 @@
+.footer {
+    min-height: 70vh;
+    font-family: Poppins, serif;
+    color: #ffffff;
+    margin-top: 50px;
+}
+
+.footer_container {
+    padding: 50px 0;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0c0c0c;
+}
+
+.content_box {
+    height: 100%;
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.content_box > div {
+    margin: 0 50px;
+}
+
+.copyright {
+    height: 20%;
+    color: #c1bfbf;
+    display: flex;
+    justify-content: center;
+
+}
+
+.copyright_container {
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+
+.logo {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.info_block {
+    min-height: 300px;
+    width: 400px;
+    color: #c1bfbf;
+}
+
+.info_block p{
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.contacts_block {
+    padding-top: 25px;
+    min-height: 300px;
+    width: 300px;
+}
+
+.title {
+    width: 300px;
+    height: 40px;
+    font-size: 20px;
+    border-bottom: 1px solid #454545;
+    margin-bottom: 20px;
+}
+
+.contactItem {
+    display: flex;
+    margin-bottom: 3px;
+}
+
+.contactIcon {
+    height: 50px;
+    width: 50px;
+    margin-bottom: 15px;
+    margin-right: 10px;
+    background-color: #1f1f1f;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-duration: .5s;
+}
+
+.contactIcon:hover {
+    background-color: #0d82c6;
+    transition: .5s;
+}
+
+.contactIcon img {
+    height: 25px;
+    width: 25px;
+}
+.data {
+    font-size: 14px;
+}
+.contact_type {
+    margin-bottom: 3px;
+}
+.contact_data {
+    display: block;
+    color: #c1bfbf;
+}
+
+@media screen and (max-width: 1236px) {
+    .copyright_container {
+        width: 90%;
+    }
+    .content_box {
+        width: 90%;
+    }
+}
+@media screen and (max-width: 786px) {
+    .copyright_container {
+        width: 100%;
+    }
+    .content_box {
+        width: 100%;
+    }
+    .content_box {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .content_box > div {
+        margin: 10px;
+    }
+    .copyright_container {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .info_block {
+        width: 270px;
+    }
+    .info_block p {
+        text-align: center;
+    }
+    .socialNetwork_box {
+        display: flex;
+        justify-content: center;
+    }
+    .contacts_block {
+        width: 260px;
+    }
+    .contactItem {
+        margin-left: 15px;
+    }
+}

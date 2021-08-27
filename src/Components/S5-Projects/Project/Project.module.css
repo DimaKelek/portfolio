@@ -1,0 +1,151 @@
+.project {
+    height: 600px;
+    width: 400px;
+    margin: 10px;
+
+    font-family: Poppins, serif;
+    background-color: #0c0c0c;
+    padding-bottom: 15px;
+}
+
+.photo {
+    background-color: #0c0c0c;
+    height: 250px;
+    transition: .5s;
+    position: relative;
+    z-index: 2;
+}
+
+.photo img {
+    height: 100%;
+    width: 100%;
+    transition: .5s;
+}
+
+.photo:hover img {
+    opacity: .5;
+}
+
+.photo:hover .button {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+}
+
+.button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 30px;
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s;
+}
+
+.discription {
+    height: 220px;
+    margin: 30px 20px;
+}
+
+.discription p {
+    height: 120px;
+    padding: 10px 10px 10px 0;
+    display: block;
+    overflow-x: hidden;
+    margin-bottom: 15px;
+}
+
+.date, .discription a > h3, .discription p {
+    margin-bottom: 15px;
+}
+
+.date, .discription p {
+    color: #c1bfbf;
+}
+
+.discription a > h3 {
+    font-size: 20px;
+    color: #ffffff;
+    transition: .5s;
+    text-transform: uppercase;
+}
+
+.discription a > h3:hover {
+    color: #0d82c6;
+}
+
+.more {
+    width: 100px;
+    color: #0d82c6;
+    transition: .5s;
+    overflow: hidden;
+}
+.more:hover {
+    color: #ffffff;
+}
+
+.line {
+    position: relative;
+    left: -55px;
+    display: block;
+    height: 2px;
+    background-color: #0d82c6;
+    transition: .5s;
+}
+
+.more:hover .line {
+    left: -10px;
+}
+
+@media screen and (max-width: 1080px){
+    .project {
+        width: 350px;
+        height: 550px;
+    }
+    .photo {
+        height: 200px;
+    }
+    .discription a > h3 {
+        font-size: 17px;
+        color: #ffffff;
+        transition: .5s;
+        text-transform: uppercase;
+    }
+    .discription p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 880px){
+    .photo {
+        height: 250px;
+    }
+    .project {
+        height: 550px;
+    }
+    .discription p {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 435px) {
+    .project {
+        width: 300px;
+    }
+    .photo {
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 290px) {
+    .project {
+        width: 250px;
+    }
+    .photo {
+        height: 180px;
+    }
+}

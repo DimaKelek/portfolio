@@ -9,3 +9,20 @@ body {
 html {
     scroll-behavior: smooth;
 }
+
+a {
+    text-decoration: none;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #36a2e7;
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #214cc6;
+}
